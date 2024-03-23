@@ -45,6 +45,10 @@ class App:
         self.iniciar_button.pack(pady=20)
 
     def escolher_origem(self):
+        """
+
+        :return:
+        """
         diretorio = filedialog.askdirectory()
         self.origem_entry.delete(0, tk.END)
         self.origem_entry.insert(0, diretorio)
@@ -55,6 +59,10 @@ class App:
         self.destino_entry.insert(0, diretorio)
 
     def iniciar_divisao(self):
+        """
+
+        :return:
+        """
         origem = self.origem_entry.get()
         destino = self.destino_entry.get()
         if not origem or not destino:
@@ -71,6 +79,12 @@ class App:
             messagebox.showerror('Erro', f'Ocorreu um erro: {str(e)}')
 
     def dividir_pastas(self, origem, destino):
+        """
+
+        :param origem:
+        :param destino:
+        :return:
+        """
         pastas = [
             os.path.join(origem, pasta)
             for pasta in os.listdir(origem)

@@ -5,7 +5,6 @@ pip install pyinstaller
 
 # Empacota
 pyinstaller --onefile -w src/app.py
-
 ````
 
 <br>
