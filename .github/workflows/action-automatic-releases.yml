@@ -6,6 +6,8 @@
 # Descobri também que é possível excluir arquivos usando o ".gitattributes"
 # https://stackoverflow.com/questions/50059612/how-to-ignore-some-files-in-release-with-git
 
+
+
 name: 'Create Release'
 
 on:
