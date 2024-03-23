@@ -24,13 +24,9 @@ jobs:
 
       - uses: 'marvinpinto/action-automatic-releases@latest'
         with:
-          repo_token: '${{ secrets.GITHUB_TOKEN }}'
+          repo_token: '${{ secrets.A_GITHUB_TOKEN }}'
           automatic_release_tag: 'app'
           prerelease: false
           title: 'Aplicativo'
           files: |
-            dist/esaj_app.exe
-            
-
-
-
+            dist/app.exe
